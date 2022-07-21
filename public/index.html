@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<div class="wrapper">
+  <div class="loader">
 <html>
   <head>
     <title>BIT PAGES</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <metaname="viewport" content="width=device-width, initial-scale=1">
     <style>
       body{
         background-image: url("img/wall1.jpg");
@@ -48,18 +50,18 @@
             </style>
             <h2 style="margin-bottom:200px"> BANNARI AMMAN INSTITUTE OF TECHNOLOGY </h2>
             <p>
-              <a  href="https://camps.bitsathy.ac.in/CAMPS/CommonJSP/login.jsp" target="_blank"><img src="img/CAMPUS.png" alt="CAMPUS" width="150" height="170"></a>
-              <a  href="https://moodle.bitsathy.ac.in/" target="_blank"><img src="img/MOODLE_1.png" alt="MOODLE" width="150" height="170"></a>
-              <a href="https://bip.bitsathy.ac.in/nova/login" target="_blank"><img src="img/BIP.png" alt="BIP PORTAL" width="150" height="170"></a>
-              <a href="https://wiki.bitsathy.ac.in/wiki/BITWIKI:Main_Page" target="_blank"><img src="img/BITWIKI.png" alt="BIT WIKI" width="150" height="170"></a>
-              <a href="https://mybitsathy.web.app/dashboard" target="_blank"><img src="img/MY_BIT53.png" alt="MY BIT" width="150" height="170"></a>
-              <a href="https://discourse.bitsathy.ac.in/" target="_blank"><img src="img/discourse.png" alt="DISCOURSE FORM" width="150" height="170"></a>
+              <ahref="https://camps.bitsathy.ac.in/CAMPS/CommonJSP/login.jsp" target="_blank"><img src="img/CAMPUS.png" alt="CAMPUS" width="150" height="170"></a>
+              <ahref="https://moodle.bitsathy.ac.in/" target="_blank"><img src="img/MOODLE_1.png" alt="MOODLE" width="150" height="170"></a>
+              <ahref="https://bip.bitsathy.ac.in/nova/login" target="_blank"><img src="img/BIP.png" alt="BIP PORTAL" width="150" height="170"></a>
+              <ahref="https://wiki.bitsathy.ac.in/wiki/BITWIKI:Main_Page" target="_blank"><img src="img/BITWIKI.png" alt="BIT WIKI" width="150" height="170"></a>
+              <ahref="https://mybitsathy.web.app/dashboard" target="_blank"><img src="img/MY_BIT53.png" alt="MY BIT" width="150" height="170"></a>
+              <ahref="https://discourse.bitsathy.ac.in/" target="_blank"><img src="img/discourse.png" alt="DISCOURSE FORM" width="150" height="170"></a>
             </p>
           </div>
         </div>
       </div>
     </div>
-    <div style="align-items:baseline;">
+    <divstyle="align-items:baseline;">
       <footer class="footer-copy">
         <div class="container-fluid">
           <div class="row">
@@ -72,3 +74,28 @@
     </div>
   </body>
 </html>
+<style>
+  wrapper{
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-image: url(img/wall1.jpg);
+    display: grid;
+    place-items: center;
+    transition: opacity.25s, visibility 1s;
+  }
+  fade{
+    opacity: 0;
+    visibility: hidden;
+  }
+</style>
+<script>
+  const fadeout = () {
+    const loaderwrapper = 
+    document.querySelector('wrapper');
+    loaderwrapper.classList.add('fade');
+  }
+  window.addEventListener('load', fadeout);
+</script>
+</div>
+</div>
